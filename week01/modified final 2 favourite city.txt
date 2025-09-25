@@ -28,11 +28,37 @@
             border-radius: 8px;
         }
 
-        .inner-box h2,
-        .inner-box h3,
-        .inner-box h4 {
-            margin-top: 0;
+        .deep-inner-box {
+            border: 1px solid #c0c0c0;
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        .code-box {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .white-inner-box {
+            background-color: #fff;
             color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px dashed #ccc;
+            margin-top: 10px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #333;
+            margin-top: 0;
         }
 
         img {
@@ -64,6 +90,16 @@
                 <h2>About Me</h2>
                 <p>This is a paragraph about myself.</p>
             </section>
+
+            <!-- New Nested Boxes for Box 1 -->
+            <div class="deep-inner-box">
+                <h4>Inner Box 1.1</h4>
+                <p>This is the first nested box within the first main section.</p>
+            </div>
+            <div class="deep-inner-box">
+                <h4>Inner Box 1.2</h4>
+                <p>This is the second nested box within the first main section.</p>
+            </div>
         </div>
 
         <!-- Box 2 -->
@@ -75,6 +111,16 @@
                 journey back in time, allowing me to reflect on the early days of Islam and feel a deeper connection to
                 its story. The city's rich history reinforces my belief and strengthens my resolve.</p>
             <img src="https://placehold.co/600x400/808080/FFFFFF?text=Present+day+Mecca" alt="Present day Mecca">
+
+            <!-- New Nested Boxes for Box 2 -->
+            <div class="deep-inner-box">
+                <h4>Inner Box 2.1</h4>
+                <p>This is the first nested box within the second main section.</p>
+            </div>
+            <div class="deep-inner-box">
+                <h4>Inner Box 2.2</h4>
+                <p>This is the second nested box within the second main section.</p>
+            </div>
         </div>
 
         <!-- Box 3 -->
@@ -92,6 +138,24 @@
                 <h4>About Me</h4>
                 <p>This is a paragraph about myself.</p>
             </section>
+
+            <!-- New Nested Boxes for Box 3 -->
+            <div class="deep-inner-box">
+                <h4>Inner Box 3.1</h4>
+                <p>This is the first nested box within the third main section.</p>
+            </div>
+            <div class="deep-inner-box">
+                <h4>Inner Box 3.2</h4>
+                <p>This is the second nested box within the third main section.</p>
+            </div>
+        </div>
+
+        <!-- The boxes you saw in the screenshot -->
+        <div class="code-box">
+            This article covers semantic tags like
+            <div class="white-inner-box">
+                &lt;div&gt; and &lt;span&gt; for styling purposes
+            </div>
         </div>
     </div>
 </body>
