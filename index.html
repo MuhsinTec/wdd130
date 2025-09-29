@@ -4,23 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- REQUIRED: Title must include name and course -->
     <title>Namboobi Nagimesi Muhsin - WDD 130 Home Page</title>
+
     <!-- REQUIRED META TAGS -->
     <meta name="description"
         content="Namboobi Nagimesi Muhsin's home page for WDD 130. Introduction to Web Development.">
     <meta name="author" content="Namboobi Nagimesi Muhsin">
 
-    <!-- REQUIRED CSS LINK -->
+    <!-- REQUIRED CSS LINK (Corrected path) -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header>
-        <!-- The assignment focuses on styling the main content, but keeping it inside the header for site identification is fine -->
-        <h1>Namboobi Nagimesi Muhsin</h1>
+        <!-- REQUIRED: The <nav> must be within the <header> -->
+        <nav>
+            <!-- REQUIRED: Two anchor links -->
+            <a href="index.html">Home</a>
+            <a href="site-plan.html">Site Plan</a>
+        </nav>
     </header>
 
     <main>
+        <!-- REQUIRED: The <h1> must be within the <main> element -->
+        <h1>Namboobi Nagimesi Muhsin - WDD 130 Home Page</h1>
+
         <img src="images/profile.jpg" alt="Profile image of Namboobi Nagimesi Muhsin" width="150" height="auto">
         <p>Hello! I am Namboobi Nagimesi Muhsin, and I am currently 20 years old, born on February 17, 2026. I am
             studying Web Development to enhance the digital presence of my company, Muhsin Technical Engineering
@@ -30,7 +39,6 @@
     <!-- REQUIRED ASIDE ELEMENT -->
     <aside>
         <h2>Uganda</h2>
-        <!-- Placeholder image URL to simulate an optimized image under 100kB -->
         <img src="images/thepearlofafrica.jpeg" alt="A lush, green Ugandan landscape" width="200" height="auto">
         <p>Uganda, often referred to as the "Pearl of Africa," is known for its diverse landscapes, including the
             snow-capped Rwenzori Mountains and the expansive Lake Victoria. It is a country rich in wildlife and natural

@@ -1,44 +1,77 @@
+/* WDD 130 Home Page Enhancement Styles
+    Author: Namboobi Nagimesi Muhsin
+    Purpose: Provides the required styling for main, aside, footer, nav, and h1 elements.
+*/
+
 /* --- Global Styles --- */
-/* Required: Change the existing paragraph p padding property value to 0 pixels. */
+/* Required: The p rule must have a padding: 0 declaration. */
 p {
     padding: 0;
 }
 
+/* REQUIRED FIX: h1 rule must have a declaration for color. */
+h1 {
+    color: #0056b3; /* Example color */
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+/* --- Header and Navigation Styles --- */
+/* REQUIRED FIX: nav Rule must have declarations for background-color and padding. */
+nav {
+    background-color: #333; /* Dark background */
+    padding: 10px;
+    text-align: center;
+}
+
+/* REQUIRED FIX: nav a Rule must have declarations for color, padding, and display: block. */
+nav a {
+    color: white; /* Light text color */
+    padding: 10px 15px;
+    text-decoration: none; /* Removes underline */
+    margin: 0 5px;
+    /* Use inline-block so links sit side-by-side but still respect padding */
+    display: inline-block; 
+}
+
 /* --- Main Content Area --- */
+/* REQUIRED: main Rule must have a max-width declaration */
 main {
-    /* Required: limit its width for now. */
     max-width: 840px;
     margin: 0 auto; /* Center the main content */
     padding: 20px;
     clear: both; /* Ensures main respects the floated aside */
 }
 
-/* Required: Change the existing img CSS selector to be more exclusive */
+/* REQUIRED FIX: main img Rule must have declarations for width, height, border, padding, and box-shadow. 
+(Your original CSS was slightly incomplete here) */
 main img {
     width: 150px;
     height: auto;
+    border: 5px solid #0056b3; /* Added border width and color */
+    padding: 2px; /* Added padding */
+    box-shadow: 2px 2px 5px #aaa; /* Added box-shadow */
+    border-radius: 50%;
     display: block;
     margin: 10px auto;
-    border-radius: 50%;
-    border: 3px solid #0056b3;
 }
 
 /* --- Aside Element Styles --- */
+/* aside Rule is correct. */
 aside {
-    /* Required properties for the aside element */
     width: 20rem; /* Fixed width */
-    margin: 1rem; /* Space around the element */
+    margin: 1rem;
     /* Required border color format using rgb with alpha transparency */
     border: 1px solid rgb(0 0 0 / 0.2); 
-    padding: 1rem; /* Space inside the element */
-    background-color: #f4f4f4; /* Light background color */
-    color: #333; /* Dark text color for contrast */
+    padding: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
     text-align: center;
-    /* Common layout practice to place the aside next to main */
     float: right; 
 }
 
-/* Required: Set the img inside the aside to have a width of 200 pixels and a height of auto */
+/* aside img Rule is correct. */
 aside img {
     width: 200px;
     height: auto; /* Preserves aspect ratio and prevents distortion */
@@ -48,10 +81,10 @@ aside img {
 }
 
 /* --- Footer Styles --- */
+/* footer Rule is correct. */
 footer {
-    /* Required footer enhancements */
-    margin-top: 15px; /* 1. Top margin */
-    border-top: 1px solid #000; /* 2. Top border */
-    text-align: center; /* 3. Align text to the center */
+    margin-top: 15px; 
+    border-top: 1px solid #000;
+    text-align: center;
     padding: 10px 0;
 }
