@@ -32,7 +32,7 @@ nav a {
     text-decoration: none; /* Removes underline */
     margin: 0 5px;
     /* Use inline-block so links sit side-by-side but still respect padding */
-    display: inline-block; 
+    display: block; 
 }
 
 /* --- Main Content Area --- */
