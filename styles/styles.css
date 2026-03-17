@@ -1,7 +1,7 @@
-main { 
+main {
     max-width: 840px;
-
 }
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -32,20 +32,16 @@ p {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgd (0 0 0 / 0.2);
+    border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #333;
+    color: white;
     text-align: center;
 }
 
-aside img { 
+aside img {
     width: 200px;
     height: auto;
-}
-img {
-    width: 200px;
-    height: auto;
-    ...
 }
 
 footer {
