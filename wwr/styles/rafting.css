@@ -53,7 +53,7 @@ nav a {
   top: 20px;
   width: 100%;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgb(247, 223, 8);
   color: white;
   padding: 10px;
 }
@@ -62,7 +62,7 @@ nav a {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: white;
+  background-color: rgba(247, 243, 9, 0.925);
   padding: 10px;
   width: 70%;
 }
@@ -80,17 +80,13 @@ section {
 
 /* FOOTER */
 footer {
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
-  display: flex;
-  align-items: center; /* Centers them vertically */
-  padding: 20px;
-  
 }
 
 .socialmedia a {
   text-decoration: none;
   position: right
-}
 
+}
 
