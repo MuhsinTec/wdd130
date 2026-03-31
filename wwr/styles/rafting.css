@@ -1,93 +1,209 @@
+/* --- VARIABLES --- */
 :root {
-  --primary-color: darkblue;
+  --primary-color: #050a44; /* Darker blue for better contrast */
   --accent1-color: #333;
-  --background-color: #f4f4f4;
+  --background-color: #fdfdfd;
+  --nav-bg: #e0d4f7;
   --body-font: Verdana, sans-serif;
+  --heading-font: Georgia, serif;
 }
 
-/* RESET */
+/* --- RESET --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-/* BODY */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: var(--background-color);
+  line-height: 1.6;
 }
 
-/* LAYOUT */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* --- LAYOUT CONTAINERS --- */
 header, main, footer {
-  width: 840px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-/* NAV */
-nav {
+header {
   display: flex;
-  gap: 15px;
-  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg);
+  padding: 1rem 2rem;
+  flex-wrap: wrap; /* Fixes Screenshot 3 overlap */
 }
 
-nav a {
+header img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* --- NAVIGATION --- */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows links to stack on small screens */
+  justify-content: center;
+}
+
+nav ul li a {
   text-decoration: none;
   color: var(--primary-color);
-}
-
-/* HERO */
-.hero {
-  position: relative;
-}
-
-.hero img {
-  width: 100%;
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: white;
+  border: 1px solid #ccc;
   display: block;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
+nav ul li a:hover {
+  background-color: var(--primary-color);
   color: white;
-  padding: 10px;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(247, 243, 9, 0.925);
-  padding: 10px;
-  width: 70%;
+/* --- HERO SECTION --- */
+.hero {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 40px;
 }
 
-.hero article img {
-  float: right;
-  width: 100px;
-  margin-left: 10px;
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* SECTIONS */
-section {
-  margin: 20px 0;
+/* Positioned relative to avoid the "crashing" in your screenshot */
+.hero-article {
+  width: 90%;
+  margin: -60px auto 30px; /* Pulls box up over the image slightly */
+  background-color: white;
+  padding: 25px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
 }
 
-/* FOOTER */
-footer {
+.hero-article article {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   text-align: left;
+}
+
+.hero-article img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* --- HISTORY SECTION --- */
+.history {
+  padding: 20px;
+}
+
+.history-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
   margin-top: 20px;
 }
 
-.socialmedia a {
-  text-decoration: none;
+.history-container p {
+  flex: 1;
 }
 
+.history-container img {
+  width: 250px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+/* --- ADVENTURE GALLERY --- */
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px;
+}
+
+.adventure-gallery figure {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 10px;
+  background: #fff;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: cover;
+}
+
+/* --- FOOTER --- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--nav-bg);
+  border-top: 3px solid var(--primary-color);
+  margin-top: 50px;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
+.socialmedia img {
+  width: 32px;
+  transition: 0.3s;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1);
+}
+
+/* --- RESPONSIVE DESIGN (Mobile Fix) --- */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-article article, 
+  .history-container, 
+  .adventure-gallery {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-article img, 
+  .history-container img {
+    margin: 10px auto;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
