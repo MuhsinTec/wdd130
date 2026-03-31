@@ -1,0 +1,96 @@
+:root {
+  --primary-color: darkblue;
+  --accent1-color: #333;
+  --background-color: #f4f4f4;
+  --heading-font: Arial, sans-serif;
+  --body-font: Verdana, sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--background-color);
+}
+
+/* LAYOUT */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 10px;
+  width: 70%;
+}
+
+.hero article img {
+  float: right;
+  width: 100px;
+  margin-left: 10px;
+}
+
+/* SECTIONS */
+section {
+  margin: 20px 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center; /* Centers them vertically */
+  padding: 20px;
+  
+}
+
+.socialmedia a {
+  text-decoration: none;
+  position: right
+}
+
+
