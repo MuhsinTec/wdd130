@@ -88,7 +88,7 @@ nav ul li a:hover {
 }
 
 /* Positioned relative to avoid the "crashing" in your screenshot */
-.hero-article {
+.hero {
   width: 90%;
   margin: -60px auto 30px; /* Pulls box up over the image slightly */
   background-color: white;
@@ -99,14 +99,14 @@ nav ul li a:hover {
   z-index: 10;
 }
 
-.hero-article article {
+.hero article {
   display: flex;
   align-items: center;
   gap: 20px;
   text-align: left;
 }
 
-.hero-article img {
+.hero img {
   width: 100px;
   height: auto;
   border-radius: 4px;
