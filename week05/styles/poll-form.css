@@ -1,0 +1,111 @@
+/* Reset (clean but not destructive) */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin: 1rem auto;
+    width: 650px;
+}
+
+/* Title */
+h1 {
+    font-size: 1.6em;
+    color: #4CAF50;
+}
+
+/* Form container */
+form {
+    width: 650px;
+    margin: 1rem auto; /* FIXED center */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Fieldsets (boxes) */
+fieldset {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Legend (box title) */
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Form layout */
+.form-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Labels */
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Checkbox alignment */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Button */
+button {
+    display: block;
+    margin: 1rem auto;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Footer */
+footer {
+    margin: 1rem auto;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
