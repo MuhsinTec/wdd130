@@ -79,6 +79,21 @@ aside h2 {
     left: 20px;
 }
 
+header img {
+    width: 120px;
+}
+
+nav {
+    justify-content: flex-end;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* logo + nav */
+    align-items: center;
+    padding: 1rem;
+}
+
 header, .grid, footer {
     max-width: 840px;
     margin: 0 auto; 
