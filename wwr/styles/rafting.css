@@ -41,9 +41,19 @@ h1, h2 {
 /* ===============================
    LAYOUT CONTAINERS
 ================================ */
-header, main, footer {
+
+
+header, footer {
+width: 100%;
+}
+
+header > *, footer > * {
   max-width: 960px;
   margin: 0 auto;
+}
+
+main {
+  width: 100%;
 }
 
 /* ===============================
@@ -91,10 +101,12 @@ nav ul li a:hover {
 ================================ */
 .hero {
   position: relative;
+  width: 100%;
 }
 
 .hero img {
   width: 100%;
+  height:auto;
   display: block;
 }
 
@@ -390,7 +402,8 @@ footer {
   text-align: center;
   padding: 30px;
   background: #eee;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 960px;
 }
 
 .cta-button {
