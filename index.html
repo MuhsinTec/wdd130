@@ -4,58 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namboobi Nagimesi Muhsin | WDD 130</title>
+    <title>Home | White Water Rafting Adventures</title>
     <meta name="description"
-        content="Homepage of Namboobi Nagimesi Muhsin, a WDD 130 student learning web development and sharing projects, interests, and progress in building websites.">
+        content="Experience thrilling white water rafting adventures. Explore trips, sign up for our newsletter, and start your journey today!">
     <meta name="author" content="Namboobi Nagimesi Muhsin">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
-        <img src="images/logo.png" alt="Rafting Logo">
+        <img src="images/logo.png" alt="Rafting Company Logo">
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div class="grid">
+    <!-- MAIN CONTENT -->
+    <main>
 
-        <main>
-            <h1>Namboobi Nagimesi Muhsin | WDD 130</h1>
-            <img src="images/profile.jpg" alt="Hello, my name is Namboobi Nagimesi Muhsin" width="200">
-            <p>Hello! My name is Namboobi Nagimesi Muhsin. I am passionate about technology, engineering, and solving
-                real-world problems through practical innovation. I enjoy learning web development so that I can build
-                useful digital solutions and improve my technical skills.</p>
-            <ul class="box">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple"
-                        target="_blank">Philadelphia Pennsylvania Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple"
-                        target="_blank">Paris
-                        France
-                        Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/lima-peru-los-olivos-temple"
-                        target="_blank">Berlin
-                        Germany Temple</a></li>
-            </ul>
-        </main>
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-img">
+            <h1>Experience the Ultimate Rafting Adventure</h1>
+        </div>
 
-        <aside class="box">
-            <h2>Uganda – The Pearl of Africa</h2>
-            <img src="images/uganda.jpg" alt="Uganda, The Pearl of Africa">
-            <p>Uganda, known as the “Pearl of Africa,” is a beautiful country in East Africa. It is famous for its green
-                landscapes, diverse wildlife, and rich cultural heritage. Uganda is home to Lake Victoria, one of the
-                largest lakes in the world, and the Rwenzori Mountains. The country is known for its friendly people and
-                natural beauty, making it an important destination for tourism and culture in Africa.</p>
-        </aside>
-    </div>
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <h2>Ready for Adventure?</h2>
+            <p>Discover exciting rafting trips designed for thrill seekers and nature lovers.</p>
+            <a href="trips.html" class="cta-button">Explore Our Trips</a>
+        </section>
 
+        <!-- NEWSLETTER FORM -->
+        <section class="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <form>
+                <div class="form-item">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </section>
+
+        <!-- GRID CONTENT SECTION -->
+        <section class="home-grid">
+
+            <div class="grid-item">
+                <img src="images/adventure1.png" alt="Exciting Rapids">
+                <h3>Thrilling Rapids</h3>
+                <p>Feel the adrenaline rush as you conquer powerful river currents guided by our expert team.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/adventure2.png" alt="Beautiful Nature">
+                <h3>Beautiful Scenery</h3>
+                <p>Enjoy breathtaking landscapes and natural beauty as you navigate through stunning river routes.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/adventure3.png" alt="Team Adventure">
+                <h3>Team Experience</h3>
+                <p>Build teamwork and create unforgettable memories with friends, family, or colleagues.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy;2025 🌴 Namboobi Nagimesi Muhsin 🌴 Uganda</p>
+        <p>©2026 White Water Rafting Adventures | Namboobi Nagimesi Muhsin</p>
+
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </nav>
     </footer>
+
 </body>
 
 </html>
