@@ -58,12 +58,9 @@ main {
    HEADER & NAV
 ================================ */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  background-color: var(--nav-bg);
-  padding: 1rem 2rem;
-  flex-wrap: wrap;
 }
 
 header img {
