@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting Adventures</title>
+
     <meta name="description"
-        content="Contact White Water Rafting Adventures for bookings, trip inquiries, and customer support in Kampala, Uganda.">
+        content="Contact White Water Rafting Adventures for trip bookings, reservation questions, and customer support in Kampala, Uganda.">
+
     <meta name="author" content="Namboobi Nagimesi Muhsin">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -15,7 +18,8 @@
 
     <!-- HEADER -->
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
+        <img src="images/logo.png" alt="Rafting Company Logo">
+
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
@@ -29,74 +33,68 @@
     <!-- MAIN -->
     <main>
 
-        <!-- COMPANY INFO -->
-        <section>
-            <h1>Contact White Water Rafting Adventures</h1>
+        <!-- PAGE TITLE -->
+        <h1>Contact White Water Rafting Adventures</h1>
 
-            <p>Kimera Road, Ntinda, Kampala, Uganda</p>
-            <p>Phone: +256 760212345</p>
-            <p>Email: muhsintecn@gmail.com</p>
+        <!-- COMPANY INFO -->
+        <section class="company-info">
+            <p><strong>Address:</strong> Kimera Road, Ntinda, Kampala, Uganda</p>
+            <p><strong>Phone:</strong> +256 760 212345</p>
+            <p><strong>Email:</strong> muhsintecn@gmail.com</p>
         </section>
 
-        <!-- MAP + FORM -->
+        <!-- MAP + FORM GRID -->
         <div>
 
-            <!-- MAP -->
+            <!-- GOOGLE MAP -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7444956398017!2d32.6137125!3d0.3485479999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dba32e46795d3%3A0x23cea5f01a0406d6!2sKimera%20Rd%2C%20Kampala!5e0!3m2!1sen!2sug!4v1775476362387!5m2!1sen!2sug"
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
             <!-- FORM -->
             <form>
-
-                <!-- CONTACT INFO -->
                 <fieldset>
                     <legend>Contact Information</legend>
 
                     <div class="form-item">
-                        <label for="name">Name:</label>
+                        <label for="name">Full Name:</label>
                         <input id="name" type="text" name="name" required>
                     </div>
 
                     <div class="form-item">
-                        <label for="email">Email:</label>
+                        <label for="email">Email Address:</label>
                         <input id="email" type="email" name="email" required>
                     </div>
                 </fieldset>
 
-                <!-- MESSAGE -->
                 <fieldset>
-                    <legend>Message</legend>
+                    <legend>Message Details</legend>
 
-                    <!-- RADIO -->
                     <div class="form-items">
-                        <span>Message Purpose:</span>
+                        <label>Purpose:</label>
 
                         <input type="radio" id="general" name="purpose" value="general">
                         <label for="general">General Inquiry</label>
 
-                        <input type="radio" id="booking" name="purpose" value="booking">
-                        <label for="booking">Booking</label>
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label>
 
-                        <input type="radio" id="support" name="purpose" value="support">
-                        <label for="support">Support</label>
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
                     </div>
 
-                    <!-- TEXTAREA -->
                     <div class="form-item">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="7" required></textarea>
+                        <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
                 </fieldset>
 
-                <!-- CHECKBOX -->
                 <div class="check-box-item">
                     <input type="checkbox" id="subscribe" name="subscribe">
-                    <label for="subscribe">Subscribe to newsletter</label>
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
                 </div>
 
-                <!-- BUTTON -->
                 <div class="form-item">
                     <button type="submit">Send Message</button>
                 </div>
@@ -104,29 +102,27 @@
             </form>
         </div>
 
-        <!-- TEAM / INFO SECTION -->
+        <!-- EMPLOYEES -->
         <section class="adventure">
-            <h2>We Are Here To Serve You</h2>
-            <p>
-                We are here to assist you with any questions or inquiries about our rafting trips,
-                bookings, and support. We look forward to helping you plan your next adventure!
-            </p>
+            <h2>Meet Our Team</h2>
 
             <div class="adventure-gallery">
+
                 <figure>
                     <img src="images/adventure1.png" alt="Travel Manager">
-                    <figcaption>Mr Mustafah Kohot, Travel Manager</figcaption>
+                    <figcaption>Mustafah Kohot – Travel Manager</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/adventure2.png" alt="Assistant Manager">
-                    <figcaption>Merida Japheth, Assistant Travel Manager</figcaption>
+                    <img src="images/adventure2.png" alt="Assistant Travel Manager">
+                    <figcaption>Merida Japheth – Assistant Travel Manager</figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/adventure3.png" alt="Safety Officer">
-                    <figcaption>Spencer Johnsons, Safety Officer</figcaption>
+                    <figcaption>Spencer Johnson – Safety Officer</figcaption>
                 </figure>
+
             </div>
         </section>
 
@@ -135,12 +131,14 @@
     <!-- FOOTER -->
     <footer>
         <p>©2026 White Water Rafting Adventures | Namboobi Nagimesi Muhsin</p>
+
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Visit our Facebook page" width="30"></a>
-            <a href="#"><img src="images/twitter.png" alt="Follow us on Twitter" width="30"></a>
-            <a href="#"><img src="images/instagram.png" alt="View our Instagram profile" width="30"></a>
+            <a href="#"><img src="images/facebook.png" alt="Visit our Facebook page"></a>
+            <a href="#"><img src="images/twitter.png" alt="Follow us on Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="View our Instagram profile"></a>
         </nav>
     </footer>
+
 </body>
 
 </html>
